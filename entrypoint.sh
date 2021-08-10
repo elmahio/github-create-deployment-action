@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+sh -c "echo $*"
+
 ## upload
 
 curl --location --request POST "https://api.elmah.io//v3/deployments?api_key=$1" \
