@@ -32,6 +32,17 @@ As default, deployments are attached all logs of the organization. If you want a
 
 ## Example usage
 
+Minimum example:
+
+```yml
+uses: elmahio/github-create-deployment-action@v1
+with:
+  apiKey: ${{ secrets.ELMAH_IO_API_KEY }}
+  version: '1.0.0'
+```
+
+Example with more input and GitHub variables:
+
 ```yml
 uses: elmahio/github-create-deployment-action@v1
 with:
