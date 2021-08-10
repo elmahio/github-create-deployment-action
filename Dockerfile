@@ -4,6 +4,8 @@ FROM alpine:3.10
 # Install curl
 RUN apk add --no-cache curl
 
+RUN chmod +x entrypoint.sh
+
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
